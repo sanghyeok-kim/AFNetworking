@@ -36,7 +36,7 @@ let package = Package(
     products: [
         .library(
             name: "AFNetworking",
-            targets: ["AFNetworking", "UIKit+AFNetworking"]
+            targets: ["AFNetworking", "UIKit-AFNetworking"]
         )
     ],
     targets: [
@@ -46,8 +46,8 @@ let package = Package(
             publicHeadersPath: ""
         ),
         .target(
-            name: "UIKit+AFNetworking",
-            path: "UIKit+AFNetworking",
+            name: "UIKit-AFNetworking",
+            path: "UIKit-AFNetworking",
             publicHeadersPath: ""
         )
     ]
